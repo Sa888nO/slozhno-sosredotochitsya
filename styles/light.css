@@ -10,4 +10,13 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --background: #FFF1F7;
+  --header-background-image: url("./../images/cover-image-light.png");
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background: #FFF1F7;
+        --header-background-image: url("./../images/cover-image-light.png");
+        --header-background-image-opacity: 1;
+    }
 }

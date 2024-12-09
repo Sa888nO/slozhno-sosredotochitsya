@@ -5,4 +5,7 @@
 
 :root {
     --background: #000028;
+    --header-background-image: url("./../images/cover-image-dark.png");
+    --header-background-image-opacity: 1;
+    --font-family: 'IBM Plex mono', monospace;
 }

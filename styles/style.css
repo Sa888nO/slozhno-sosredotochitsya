@@ -3,4 +3,98 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-color: var(--background);
+  font-family: var(--font-family, 'IBM Plex mono', monospace);
 }
+
+.header {
+    position: relative;
+    height: 100lvh;
+    padding: 10px;
+}
+
+.header::before {
+    content: "";
+    background-image: var(--header-background-image);
+    background-clip: content-box;
+    background-position: center bottom;
+    opacity: var(--header-background-image-opacity); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+}
+
+.header__decoration-bottom,
+.header__decoration-top {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+
+.header__decoration-top {
+    bottom: 10px;
+    left: 10px;
+    border-bottom: 1px solid var(--text-color);
+    border-left: 1px solid var(--text-color);
+}
+
+.header__decoration-bottom {
+    top: 10px;
+    right: 10px;
+    border-top: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+}
+
+.header__decoration-REC {
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 10px;
+    right: 19px;
+    color: #FF0070;
+    width: max-content;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+}
+.header__decoration-REC::after {
+    display: block;
+    content: '';
+    height: 9px;
+    width: 9px;
+    background-color: #FF0070;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 2px #FF0070;
+}
+
+.header__title {
+    font-size: 116px;
+    font-weight: 700;
+    line-height: 95.7px;
+    color: #DB00FF;
+    text-shadow: 4px 4px 0 #ff0070;
+}
+
+.header__text {
+    background-color: #FF0070;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.4px;
+    color: #000028;
+}
+
+/* .decorated-zone::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    border-top: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+} */

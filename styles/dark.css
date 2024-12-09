@@ -10,4 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --background: #000028;
+  --header-background-image: url("./../images/cover-image-dark.png");
+  --header-background-image-opacity: 0.5;
+  --text-color: #FF0070;
 }
