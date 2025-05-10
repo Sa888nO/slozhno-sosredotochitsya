@@ -4,8 +4,21 @@
 */
 
 :root {
-    --background: #000028;
-    --header-background-image: url("./../images/cover-image-dark.png");
-    --header-background-image-opacity: 1;
-    --font-family: 'IBM Plex mono', monospace;
+    --padding: 20px;
+    --title-color: #DB00FF;
+    --shadow-color: #ff0070;
+    --primary-color: #F1B2CE;
+    --secondary-color: #000028;
+    --accent-color: #ff0070;
+    --accent-text-color: #FF0070;
+    --bg-image: url(../images/cover-image-dark.png);
+    --button-hover-outline: #ff007066;
+    --rec-display: block;
+}
+
+
+@media (max-width < 768px) {
+    :root {
+        --padding: 10px;
+    }
 }
