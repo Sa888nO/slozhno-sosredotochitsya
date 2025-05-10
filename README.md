@@ -1,1 +1,1 @@
-[# Проект "Сложно сосредоточиться"](https://github.com/Sa888nO/slozhno-sosredotochitsya)
+https://github.com/Sa888nO/slozhno-sosredotochitsya
