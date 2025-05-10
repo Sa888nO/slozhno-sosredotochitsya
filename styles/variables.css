@@ -15,10 +15,3 @@
     --button-hover-outline: #ff007066;
     --rec-display: block;
 }
-
-
-@media (max-width: 768px) {
-    :root {
-        --padding: 10px;
-    }
-}
