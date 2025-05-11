@@ -11,7 +11,7 @@
 
 .content {
     --padding: 20px;
-    width: 100vw;
+    width: 100%;
     color: var(--primary-color);
     font-weight: normal;
     font-size: 18px;
@@ -259,28 +259,26 @@
     text-shadow: 2px 2px 0 var(--shadow-color);
 }
 
-.footer::before, 
-.header::before {
+.corners::before,
+.corners::after {
     content: '';
     position: absolute;
     width: 25px;
     height: 25px;
-    bottom: var(--padding);
-    left: var(--padding);
-    border-bottom: 1px solid var(--accent-text-color);
-    border-left: 1px solid var(--accent-text-color);
+    border-color: var(--accent-text-color);
+    border-style: solid;
 }
 
-.footer::after,
-.header::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
+.corners::before {
+    bottom: var(--padding);
+    left: var(--padding);
+    border-width: 0 0 1px 1px;
+}
+
+.corners::after {
     top: var(--padding);
     right: var(--padding);
-    border-top: 1px solid var(--accent-text-color);
-    border-right: 1px solid var(--accent-text-color);
+    border-width: 1px 1px 0 0;
 }
 
 /* Adaptive */
