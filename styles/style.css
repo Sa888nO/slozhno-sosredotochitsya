@@ -76,6 +76,7 @@
 
 .header__theme-menu-button_active {
     outline: 1px solid var(--accent-text-color);
+    pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
@@ -99,10 +100,6 @@
     line-height: 100%;
     text-transform: lowercase;
     background-color: transparent;
-}
-
-.header__theme-menu-button_active {
-    pointer-events: none;
 }
 
 .title {
