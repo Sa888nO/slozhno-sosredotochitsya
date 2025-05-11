@@ -9,6 +9,7 @@
         --bg-image: url(../images/cover-image-light.png);
         --button-hover-outline: #32312d66;
         --rec-display: none;
+        --background: #fff1f7;
     }
 }
   
@@ -21,4 +22,5 @@
     --bg-image: url(../images/cover-image-light.png);
     --button-hover-outline: #32312d66;
     --rec-display: none;
+    --background: #fff1f7;
 } 

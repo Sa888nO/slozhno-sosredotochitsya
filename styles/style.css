@@ -1,5 +1,6 @@
 .page {
     margin: 0;
+    background-color: var(--background);
     background-image: var(--bg-image);
     background-repeat: no-repeat;
     background-position: center;
