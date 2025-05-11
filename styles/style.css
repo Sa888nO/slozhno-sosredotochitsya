@@ -35,7 +35,7 @@ html::-webkit-scrollbar {
     min-height: 768px;
 }
 
-.header > article {
+.header__text {
     grid-area: article;
     justify-self: flex-end;
     font-weight: bold;
@@ -350,7 +350,7 @@ html::-webkit-scrollbar {
         width: auto;
     }
     
-    .header > article {
+    .header__text {
         width: 100%;
     }
     
