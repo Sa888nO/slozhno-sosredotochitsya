@@ -8,10 +8,6 @@
     font-family: 'IBM Plex mono', sans-serif;
 }
 
-html::-webkit-scrollbar {
-    width: 0;
-}
-
 .content {
     --padding: 20px;
     width: 100vw;
