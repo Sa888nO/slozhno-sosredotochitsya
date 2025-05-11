@@ -110,7 +110,7 @@
     grid-area: title;
     color: var(--title-color);
     font-weight: bold;
-    font-size: 157px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 82.5%;
 }
 
@@ -289,12 +289,7 @@
         min-width: 768px;
         min-height: 1024px;
     }
-    
-    .title {
-        font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    }
 
-        
     .info-block:has(.row-type-list) > h2:first-child {
         width: calc(100% / 4);
     }
