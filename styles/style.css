@@ -1,5 +1,4 @@
 .page {
-    margin: 0;
     background-color: var(--background);
     background-image: var(--bg-image);
     background-repeat: no-repeat;
@@ -126,30 +125,80 @@
     gap: 80px;
 }
 
-.info-block {
+.concentration-factors {
     display: grid;
     gap: 20px;
 }
 
-.info-block > h2:first-child {
+.concentration-factors__title {
     color: var(--accent-text-color);
     font-family: inherit;
     font-weight: bold;
     font-size: inherit;
-}
-
-.info-block:has(.row-type-list) > h2:first-child {
     width: calc(100% / 3);
 }
 
-.row-type-section {
-    grid-template-columns: calc((100% / 3) - 13px) calc((100% * 2 / 3) - 7px);
+.concentration-factors__list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.concentration-factors__list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.concentration-factors__list-item h3 {
+    color: var(--secondary-color);
+    font-weight: bold;
+    background-color: var(--accent-color);
 }
 
 
-.info-block ul {
+
+.info-block {
     display: grid;
     gap: 20px;
+    grid-template-columns: calc((100% / 3) - 13px) calc((100% * 2 / 3) - 7px);
+}
+
+.info-block__title {
+    color: var(--accent-text-color);
+    font-family: inherit;
+    font-weight: bold;
+    font-size: inherit; 
+}
+
+.info-block__list-title {
+    color: var(--secondary-color);
+    font-weight: bold;
+    background-color: var(--accent-color);
+}
+
+.info-block__list,
+.info-block__list-wrapper {
+    display: grid;
+    gap: 20px;
+}
+
+.info-block__list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-block__list-item h4 {
+    color: var(--secondary-color);
+    font-weight: inherit;
+    background-color: var(--accent-color);
+}
+
+.info-block__list-item h3 {
+    color: var(--secondary-color);
+    font-weight: bold;
+    background-color: var(--accent-color);
 }
 
 .info-block ul li {
@@ -167,11 +216,6 @@
     color: var(--secondary-color);
     font-weight: inherit;
     background-color: var(--accent-color);
-}
-
-.row-type-list {
-    grid-auto-columns: 1fr;
-    grid-auto-flow: column;
 }
 
 .link {
@@ -194,7 +238,7 @@
     gap: var(--padding);
 }
 
-.gallery img {
+.gallery__img {
     display: block;
     height: 100%;
     width: 100%;
@@ -202,13 +246,13 @@
     object-position: center;
 }
 
-.gallery > h2 {
+.gallery__title {
     color: var(--secondary-color);
     font-weight: bold;
     background-color: var(--accent-color);
 }
 
-.gallery ul {
+.gallery__images {
     display: grid;
     gap: var(--padding);
     padding: 0;
@@ -222,23 +266,23 @@
     "third fifth fifth";
 }
 
-.gallery ul li:nth-child(1) {
+.gallery__images li:nth-child(1) {
     grid-area: first;
 }
 
-.gallery ul li:nth-child(2) {
+.gallery__images li:nth-child(2) {
     grid-area: second;
 }
 
-.gallery ul li:nth-child(3) {
+.gallery__images li:nth-child(3) {
     grid-area: third;
 }
 
-.gallery ul li:nth-child(4) {
+.gallery__images li:nth-child(4) {
     grid-area: fourth;
 }
 
-.gallery ul li:nth-child(5) {
+.gallery__images li:nth-child(5) {
     grid-area: fifth;
 }
 
@@ -287,15 +331,16 @@
         min-height: 1024px;
     }
 
-    .info-block:has(.row-type-list) > h2:first-child {
+    .concentration-factors__title {
         width: calc(100% / 4);
     }
     
-    .row-type-section {
+    .info-block {
         grid-template-columns: calc((100% / 3) - 6px) calc((100% * 2 / 3) - 14px);
     }
     
-    .row-type-list {
+    .concentration-factors__list {
+        grid-template-columns: 1fr;
         grid-auto-flow: row;
     }
     
@@ -334,7 +379,7 @@
         grid-auto-flow: row;
     }
     
-    .info-block:has(.row-type-list) > h2:first-child {
+    .concentration-factors__title {
         width: auto;
     }
     
@@ -346,18 +391,18 @@
         padding: 40px var(--padding);
     }
 
-    .gallery ul {
+    .gallery__images {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-auto-flow: row;
         grid-template-areas: none;
     }
 
-    .gallery ul li:nth-child(1),
-    .gallery ul li:nth-child(2),
-    .gallery ul li:nth-child(3),
-    .gallery ul li:nth-child(4),
-    .gallery ul li:nth-child(5) {
+    .gallery__images li:nth-child(1),
+    .gallery__images li:nth-child(2),
+    .gallery__images li:nth-child(3),
+    .gallery__images li:nth-child(4),
+    .gallery__images li:nth-child(5) {
         grid-area: auto;
     }
 }
